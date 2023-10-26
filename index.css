@@ -1,262 +1,138 @@
-/* PRESETS  */
-* {
-    marign: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  li {
-    text-decoration: none;
-  }
-  
-  a {
-    texte-decoration: none;
-    color: inherit;
-  }
-  
-  /*   KEYFRAMES */
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-      transform: translateY(15px);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
-  }
-  
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+html {
+  height: 100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767.98px) {
   body {
-    font-family: 'Lato', sans-serif;
-    background-image: url("https://unsplash.com/photos/pensive-black-man-looking-through-the-window-while-his-girlfriend-fell-asleep-on-his-shoulder-in-a-bus-tV0FzZ8kZIg");
-    background-position-y: -120px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: darken;
-    height: 100vh;
-    overflow-y: hidden;
-    margin: 0;
+    height: 100%;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    background: hsl(257, 40%, 49%) url("https://svgshare.com/i/Jc_.svg")
+      no-repeat !important;
+    background-size: 100% 33vh !important;
+  }
+
+  #main-div {
+    width: 80%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
-  
-  /* HEADER  */
-  
-  .header {
+  h1 {
+    font-family: "Poppins", sans-serif !important;
+    width: 50% !important;
+    height: 200%;
+    align-self: flex-start;
+  }
+  #social-div {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-family: "Poppins", sans-serif !important;
+    width: 15% !important;
+    align-self: flex-start;
+    font-size: 24px !important;
+  }
+  body {
+    height: 100%;
+    background: hsl(257, 40%, 49%) url("https://svgshare.com/i/JaD.svg") !important;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    background-size: 100% 100vh !important;
+  }
+
+  #main-div {
+    height: 95vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    width: 900px;
-    margin: 0 auto;
-    animation: fade-in 0.4s;
-    
+    flex-direction: column;
   }
-  
-  .logo {
-    color: #0092ca;
-    font-size: 30px;
-    font-weight: 700;
-    
+  #social-div {
+    position: absolute;
+    bottom: 1%;
   }
-  .nav {
-    padding: 20px 0;
-    
+}
+
+#logo-img {
+  padding-top: 11%;
+  padding-bottom: 0%;
+}
+
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-family: "Poppins", sans-serif !important;
+    width: 15% !important;
+    align-self: flex-start;
+    position: relative;
+    bottom: 6%;
   }
-  .nav-list {
-    display: flex;
-    column-gap: 10px;
-  }
-  .nav-item {
-    margin-left: 25px;
-  }
-  .nav-link {
-    text-decoration: none;
-    color: rgba(225, 225, 225, 0.7);
-    font-size: 14px;
-    font-weight: 500;
-    transition: all 0.3s;
-  }
-  .nav-link:hover {
-    color: rgba(225, 225, 225, 1);
-  }
-  
-  /* MAIN  */
-  
-  .main {
-    color: #fff;
-    text-align: center;
-    margin-top: 0px;
-    animation: fade-in 0.4s 0.1s backwards;
-    
-  }
-  
-  .heading {
-    font-size: 65px;
-    font-weight : 700;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 25px;
-    line-height: 0.9;
-  }
-  .text {
-    max-width: 630px;
-    font-size: 25px;
-    line-height: 1.4;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.7;
-    
-  }
-  
-  .form {
-    margin-top: 40px;
-  }
-  .input {
-    width: 511px;
-    height: 64px;
-    outline: none;
-    border: none;
-    border-radius: 3px;
-    opacity: 0.8;
-    font: inherit;
-    padding: 0;
-    padding-left: 10px;
-    font-size: 17px;
-    transition: all 0.3s;
-    
-  }
-  .input:focus {
-    opacity: 1;
-  }
-  .input::placeholder {
-    color: #000;
-  }
-  .btn {
-    height: 64px;
-    width: 130px;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    background-color: #0092ca;
-    font: inherit;
-    margin-left: 5px;
-    text-transform: uppercase;
-    letter-spacing: 1;
-    padding: 0;
-    font-size: 14px;
-    font-weight: 500;
-    transition: all 0.3s;
-  }
-  
-  .btn:hover {
-    cursor: pointer;
-    background-color: #353535;
-  }
-  
-  /* FOOTER */
-  
-  .footer {
-    display: flex;
-    align-items: center;
-    width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    color: #fff;
-    opacity: 0.8;
-    justify-content: space-between;
-    font-size: 12px;
-    margin-top: auto;
-    padding-top: 10px;
-    padding-botton: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    animation: fade-in 0.4s 0.2s backwards;
-    
-  }
-  
-  /* MEDIA QUERIES */
-  @media (max-width : 985px) {
-   
-    body {
-      background-size: auto;
-      background-position: center;
-       background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: darken;
-      overflow-x: hidden;
-      
-    }
-    .header {
-      width: 600px;
-      font-size: 10px;
-      
-    }
-    
-    .heading {
-      font-size: 55px;
-      width: 450px;
-    }
-    .text {
-      font-size: 15px;
-      width: 380px;
-    }
-    
-    .input {
-      width:450px;
-      height: 54px;
-    }
-    .btn {
-      width: 100px;
-      height: 54px;
-    }
-    .footer {
-      margin-top: auto;
-      width: 600px;
-    }
-  }
-  
-  @media (max-width: 650px) {
-    .header {
-      flex-direction: column;
-      
-    }
-    .nav {
-      padding: 0;
-    }
-    
-    .heading {
-      font-size: 40px;
-      width: 450px;
-    }
-    .input {
-      display: block;
-      margin: 0 auto;
-      margin-bottom: 10px;
-    }
-    .btn {
-      display: block;
-      width: 450px;
-      margin: 0 auto;
-    }
-    .footer {
-      width: 500px;
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .header {
-      width: 350px;
-      margin: 0 auto;
-    }
-    
-    .footer {
-      flex-direction: column;
-    }
-  }
-  
-  
+}
+/*
+@media only screen and (min-width: 320px) and (max-width: 991.98px) {
+  h1{
+  font-family: 'Poppins', sans-serif !important;
+  width: 15% !important;
+    align-self: flex-start;
+    position: absolute;
+    top: 1%;
+}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  h1{
+  font-family: 'Poppins', sans-serif !important;
+  width: 15% !important;
+    align-self: flex-start;
+    position: absolute;
+    top: 3%;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+  h1{
+  font-family: 'Poppins', sans-serif !important;
+  width: 15% !important;
+    align-self: flex-start;
+    position: absolute;
+    top: 2%;
+}
+*/
+
+h2 {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 24px !important;
+}
+
+#register-btn {
+  color: hsl(257, 40%, 49%) !important;
+  font-size: 16px !important;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.social-icons {
+  font-size: 16px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 7px 10px 7px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+

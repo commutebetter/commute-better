@@ -1,37 +1,54 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
 <head>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+  <title>Commute Better landing Page</title>
+
 </head>
 
 <body>
-<header class="header">
-    <p class="logo">Commute Better</p>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="commuterlogin.html" class="nav-link">CommuterHub</a>
-        </li>
-        <li class="nav-item">
-          <a href="driverlogin.html" class="nav-link">DriverHub</a>
-        </li>
-        <li class="nav-item">
-          <a href="adminlogin.html" class="nav-link">AdminHub</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main">
-    <h2 class="heading">Your Seamless Taxi Booking Platform</h2>
-    <p class="text">Access hundreds of trips and taxis to find your next one. Get your tickets safely through Commute Better.</p>
-    <form  class="form">
-      <button class="btn"><a href="https://forms.google/Wbj5jWEaZrEMFX4c6">Join Waitlist</a></button>
-    </form>
-  </main>
-  <footer class="footer">
-    <p class="copyright">&copy; 2023. Copyright by Commute Better</p>
-    <p class="stats">Follow Us</p>
+  <div id="main-div" class="container">
+    <h1>
+      <a href="#">
+        <img id="logo-img" class="img-fluid" class="w-75" src="https://svgshare.com/i/JbJ.svg" alt="Huddle">
+      </a>
+    </h1>
+    <div id="landing-div" class="row align-items-center justify-content-center">
+
+      <div id="product-img-holder" class="col-12 col-md-7">
+
+        <img class="img-fluid" src=" https://svgshare.com/i/Jc8.svg" alt="main img">
+      </div>
+      <div class="col-12 col-md-5">
+        <h2 class="text-white font-weight-bold text-center text-md-left mt-5 mt-md-0"> Experience Seamless</br> Taxi Bookings</h2>
+        <p class="text-white text-center text-md-left">COBE re-imagines the way we travel. You like to keep time, but public transportation is not reliable.
+          Take charge of your time by booking your next trip in advance.</p>
+      <div id="register-btn-holder" class="d-flex justify-content-center justify-content-md-start">
+        <button id="register-btn" type="button" class="btn btn-lg bg-white rounded-pill px-5 text-center">Get Started Today</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="social-div" class="col-12 row justify-content-center justify-content-md-end align-items-center mb-3 mt-4 mt-md-0">
+    <i class="fab fa-facebook-f social-icons"></i>
+    <i class="fab fa-twitter social-icons"></i>
+    <i class="fab fa-instagram social-icons"></i>
+  </div>
+  <footer style="display: none">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
   </footer>
-  </body>
-  <footer></footer>
+</body>
 
 </html>
