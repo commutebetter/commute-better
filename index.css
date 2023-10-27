@@ -14,14 +14,6 @@ body {
   margin: 0 auto;
 }
 
-.logo-text {
-  font-size: 25px;
-  font-weight: bold;
-  color: #0092ca; /* Your desired text color */
-  text-transform: uppercase; /* Optional: Uppercase the text */
-  /* Add any other styles you want */
-}
-
 
 #header {
   background: white;
@@ -33,11 +25,15 @@ body {
   z-index: 3;
 }
 
-#header-img {
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0092ca; /* Your desired text color *//* Optional: Uppercase the text */
   margin-left: 20px;
   float: left;
   height: 80px;
 }
+
 
 nav ul {
   overflow: hidden;
