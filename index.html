@@ -1,54 +1,70 @@
-<!-- <!DOCTYPE html> -->
-<html lang="en">
+<!DOCTYPE html> <!-- Document Type Declaration -->
 
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-    <link rel="stylesheet" type="text/css" href="index.css">
-
-  <title>Commute Better landing Page</title>
-
+    <meta charset="UTF-8"> <!-- Character encoding declaration -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport settings for responsive design -->
+    <title>Commute Better | Taxi Booking Platform. </title> <!-- Title of the web page, displayed in the browser tab -->
+    <link rel="stylesheet" type="text/css" href="index.css"> <!-- Link to an external CSS stylesheet -->
 </head>
 
 <body>
-  <div id="main-div" class="container">
-    <h1>
-      <a href="#">
-        <img id="logo-img" class="img-fluid" class="w-75" src="https://svgshare.com/i/JbJ.svg" alt="Huddle">
-      </a>
-    </h1>
-    <div id="landing-div" class="row align-items-center justify-content-center">
-
-      <div id="product-img-holder" class="col-12 col-md-7">
-
-        <img class="img-fluid" src=" https://svgshare.com/i/Jc8.svg" alt="main img">
+  <div class="navbar">
+    <div class="row">
+      <button class="brand">
+        <b>COMMUTE BETTER</b>
+      </button>
+      <button class="menu-btn">
+        <svg t="1583388234559" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2279" width="16" height="16"><path d="M128 213.34016l768 0q17.67424 0 30.16704 12.4928t12.4928 30.16704-12.4928 30.16704-30.16704 12.4928l-768 0q-17.67424 0-30.16704-12.4928t-12.4928-30.16704 12.4928-30.16704 30.16704-12.4928zM128 725.34016l768 0q17.67424 0 30.16704 12.4928t12.4928 30.16704-12.4928 30.16704-30.16704 12.4928l-768 0q-17.67424 0-30.16704-12.4928t-12.4928-30.16704 12.4928-30.16704 30.16704-12.4928zM128 469.34016l768 0q17.67424 0 30.16704 12.4928t12.4928 30.16704-12.4928 30.16704-30.16704 12.4928l-768 0q-17.67424 0-30.16704-12.4928t-12.4928-30.16704 12.4928-30.16704 30.16704-12.4928z" p-id="2280" fill="#40403F"></path></svg>
+    </button>
+    </div>
+    <div class="tabs">
+      <button class="tab" data-text="About">
+        BOOK TRIP
+      </button>
+      <button class="tab" data-text="Reviews">
+        BOOK TAXI
+      </button>
+      <button class="tab" data-text="Book Your Trip">
+        ADMIN
+      </button>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="carousel-labels">
+        <label class="carousel-label active" for="Forbidden City">Transforming Taxi Travel!</label>
+        <label class="carousel-label" for="Jingshan Park">Jingshan Park</label>
+        <label class="carousel-label" for="Temple of Heaven">Temple of Heaven</label>
+        <label class="carousel-label" for="Beihai Park">Beihai Park</label>
+        <label class="carousel-label" for="Houhai Park">Houhai Park</label>
+        <label class="carousel-label" for="Yuyuantan Park">Yuyuantan Park</label>
       </div>
-      <div class="col-12 col-md-5">
-        <h2 class="text-white font-weight-bold text-center text-md-left mt-5 mt-md-0"> Experience Seamless</br> Taxi Bookings</h2>
-        <p class="text-white text-center text-md-left">Commute Better re-imagines the way we travel. Keep time, By commuting with us.
-          .</p>
-      <div id="register-btn-holder" class="d-flex justify-content-center justify-content-md-start">
-        <button id="register-btn" type="button" class="btn btn-lg bg-white rounded-pill px-5 text-center">Get Started</button>
+    <div class="carousel-container">
+      <div class="carousel">       
+        <div class="carousel-slider">
+          <img name="Yuyuantan Park" src="https://drive.google.com/uc?id=1jPdf4cqZaaq1QStx5fUDQ68lkDuZesLy" class="carousel-item last-clone" />
+          <img name="Forbidden City" src="https://drive.google.com/uc?id=1594ARY9Frdjym2cMwY0gGN_HRToowatJ" class="carousel-item" />
+          <img name="Jingshan Park" src="https://drive.google.com/uc?id=1tWoNhY4NCAVyg7Tk-jqW2yi8ZiSir9sj" class="carousel-item" />
+          <img name="Temple of Heaven" src="https://drive.google.com/uc?id=10-yyDqaiqIL8orD7qkTj0eszdJlNoX4c" class="carousel-item" />
+          <img name="Beihai Park" src="https://drive.google.com/uc?id=1VxJ9z_rtTuAWV-4AXGw-bhkByWaphfUb" class="carousel-item" />
+          <img name="Houhai Park" src="https://drive.google.com/uc?id=1bSA6BAhgRHFUjsp0QSp0U14JsYsBMbIX" class="carousel-item" />        
+          <img name="Yuyuantan Park" src="https://drive.google.com/uc?id=1jPdf4cqZaaq1QStx5fUDQ68lkDuZesLy" class="carousel-item" />  
+          <img name="Forbidden City" src="https://drive.google.com/uc?id=1594ARY9Frdjym2cMwY0gGN_HRToowatJ" class="carousel-item first-clone" />
         </div>
-
+      </div>
+      <div class="carousel-description">
+        The Forbidden City is a palace complex in central Beijing, China. It houses the Palace Museum, and was the former Chinese imperial palace from the Ming dynasty to the end of the Qing dynasty. The Forbidden City served as the home of Chinese emperors and their households and was the ceremonial and political center of the Chinese government for almost 500 years.
+      </div>
+      <div class="carousel-btns">
+        <button class="btn-left">&lt;</button>
+        <button class="btn-right">&gt;</button>
       </div>
     </div>
   </div>
 
-  <div id="social-div" class="col-12 row justify-content-center justify-content-md-end align-items-center mb-3 mt-4 mt-md-0">
-    <i class="fab fa-facebook-f social-icons"></i>
-    <i class="fab fa-twitter social-icons"></i>
-    <i class="fab fa-instagram social-icons"></i>
-  </div>
-  <footer style="display: none">
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+    <footer>
+        <p>&copy; 2023 Commute Better </p> <!-- Copyright notice or footer content -->
+    </footer>
 </body>
-
 </html>
