@@ -14,9 +14,10 @@ body {
   margin: 0 auto;
 }
 
+/* Header styles */
 #header {
   background: white;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   left: 0;
@@ -25,108 +26,70 @@ body {
 }
 
 .logo-text {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  color: #0092ca; /* Change the color of the word "commute" */
+  color: #0092ca;
+  margin-left: 20px;
+  float: left;
+  height: 80px;
 }
 
-.commute {
-  color: #0092ca; /* Change the color of the word "commute" */
+.menu-btn {
+  display: none;
 }
 
-nav ul {
-  overflow: hidden;
-  clear: both;
-  margin: 0;
-  padding: 0;
-  max-height: 0;
-  transition: max-height .2s ease-out;
-}
-
-nav ul li {
-  list-style: none;
-}
-
-nav ul li a {
-  display: block;
-  font-size: 1.15;
-  text-decoration: none;
-  color: black;
-  padding: 10px;
-}
-
-a.highlight {
-    display: block;
-  font-size: 1.15;
-  text-decoration: none;
-  color: black;
-  padding: 10px;
-}
-
-/* menu icon */
-
-.menu {
-  margin-left: 15px;
-}
-
-#header .menu-icon {
+.menu-icon {
   cursor: pointer;
-  padding: 15px 20px; /* Adjust the padding for better alignment */
+  padding: 28px 20px;
   user-select: none;
   float: right;
 }
 
-#header .menu-icon .nav-icon {
+.menu-icon .nav-icon {
   background: #333;
   display: block;
   height: 3px;
   position: relative;
   top: 10px;
-  transition: background .2s ease-out;
+  transition: background 0.2s ease-out;
   width: 30px;
 }
 
-#header .menu-icon .nav-icon:before,
-#header .menu-icon .nav-icon:after {
+.menu-icon .nav-icon:before,
+.menu-icon .nav-icon:after {
   background: #333;
   content: '';
   display: block;
   height: 100%;
   position: absolute;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   width: 100%;
 }
 
-#header .menu-icon .nav-icon:before {
+.menu-icon .nav-icon:before {
   top: 6px;
 }
 
-#header .menu-icon .nav-icon:after {
+.menu-icon .nav-icon:after {
   top: -6px;
 }
 
-/* menu btn */
-
-#header .menu-btn {
-  display: none;
-}
-
-#header .menu-btn:checked ~ .menu {
+.menu-btn:checked ~ .menu {
   max-height: 240px;
 }
 
-#header .menu-btn:checked ~ .menu-icon .nav-icon {
+.menu-btn:checked ~ .menu-icon .nav-icon {
   background: transparent;
 }
 
-#header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+.menu-btn:checked ~ .menu-icon .nav-icon:before {
   transform: rotate(-45deg);
-  top:0;
+  top: 0;
 }
 
-#header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+.menu-btn:checked ~ .menu-icon .nav-icon:after {
   transform: rotate(45deg);
-  top:0;
+  top: 0;
 }
 
 main {
