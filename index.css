@@ -266,3 +266,10 @@ body {
     }
   }
 }
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+}
