@@ -24,10 +24,14 @@ body {
   z-index: 3;
 }
 
-#header-img {
-  margin-left: 20px;
-  float: left;
-  height: 80px;
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0092ca; /* Change the color of the word "commute" */
+}
+
+.commute {
+  color: #0092ca; /* Change the color of the word "commute" */
 }
 
 nav ul {
@@ -67,7 +71,7 @@ a.highlight {
 
 #header .menu-icon {
   cursor: pointer;
-  padding: 28px 20px;
+  padding: 15px 20px; /* Adjust the padding for better alignment */
   user-select: none;
   float: right;
 }
