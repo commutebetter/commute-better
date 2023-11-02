@@ -551,6 +551,7 @@ input[type="email"] {
     float: left;
     list-style: none;
     padding: 0.5em 1em;
+    color: black; 
   }
   nav ul li a {
     font-size: 1em;
