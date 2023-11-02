@@ -14,11 +14,11 @@
           <br/>
           <p>We can't wait to get you on the road.</p>
         </div>
-          <form>
+          <form onsubmit="login(event)">
             <br/>
-            <input type="text" placeholder="Email" required />
+            <input type="email" id="email" placeholder="Email" required />
             <br/>
-            <input type="password" placeholder="Password" required>
+            <input type="password" id="password" placeholder="Password" required>
             <br/>
             <button class="login">Log In</button>
             <br/>
@@ -32,4 +32,5 @@
       </div>
     </div>
   </body>
+  <script scr="driverlogin.js" type="module"></script>
 </html>

@@ -14,18 +14,19 @@
           <br/>
           <p>We can't wait to get you on the road.</p>
         </div>
-          <form>
-            <input type="text" placeholder="First Name" required />
-            <input type="text" placeholder="Last Name" required />
-            <input type="text" placeholder="Driver's License" required />
-            <input type="text" placeholder="Phone Number" required />
-            <input type="text" placeholder="Email" required />
+          <form onsubmit="signup(event)">
+            <input type="text" id="firstname" placeholder="First Name" required />
+            <input type="text" id="lastname" placeholder="Last Name" required />
+            <input type="text" id="driverlicense" placeholder="Driver's License" required />
+            <input type="number" id="phonenumber" placeholder="Phone Number" required />
+            <input type="email" id="email" placeholder="Email" required />
             <input type="password" placeholder="Password" required>
-            <button class="login">Sign Up</button>
+            <button id="signup" value="Sign Up" >Sign Up</button>
             <hr>
             <p>Done signing up? <a href="driverlogin.html">Login Here.</a></p>
           </form>
       </div>
     </div>
   </body>
+  <script scr="driverlogin.js" type="module" ></script>
 </html>
