@@ -30,7 +30,7 @@ body {
 
 .name-content .logo {
   font-size: 3.5rem;
-  color: #1877f2;
+  color: #0092ca;
 }
 
 .name-content p {
@@ -45,7 +45,7 @@ form {
   background: #fff;
   padding: 2rem;
   width: 530px;
-  height: 380px;
+  height: 530px;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
 }
@@ -58,13 +58,14 @@ form input {
 }
 
 form input:focus {
-  border: 1.8px solid #1877f2;
+  border: 1.8px solid #0092ca
+  ;
 }
 
 form .login {
   outline: none;
   border: none;
-  background: #1877f2;
+  background: #0092ca;
   padding: 0.8rem 1rem;
   border-radius: 0.4rem;
   font-size: 1.1rem;
@@ -72,7 +73,7 @@ form .login {
 }
 
 form .login:hover {
-  background: #0f71f1;
+  background: #0092ca;
   cursor: pointer;
 }
 
@@ -81,7 +82,7 @@ form a {
   text-align: center;
   font-size: 1rem;
   padding-top: 0.8rem;
-  color: #1877f2;
+  color: #0092ca;
 }
 
 form hr {
@@ -92,17 +93,18 @@ form hr {
 form .create-account {
   outline: none;
   border: none;
-  background: #06b909;
+  background: lightgrey;
   padding: 0.8rem 1rem;
   border-radius: 0.4rem;
   font-size: 1.1rem;
-  color: #fff;
+  color: black;
   width: 75%;
   margin: 0 auto;
 }
 
 form .create-account:hover {
-  background: #03ad06;
+  background: lightgrey;
+  color: black;
   cursor: pointer;
 }
 
